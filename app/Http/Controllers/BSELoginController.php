@@ -51,7 +51,7 @@ class BSELoginController extends Controller
         try {
 
 
-        $response = Soap::baseWsdl('https://bsestarmfdemo.bseindia.com/MFOrderEntry/MFOrder.svc?wsdl')
+        $response = Soap::baseWsdl('http://bsestarmfdemo.bseindia.com/MFOrderEntry/MFOrder.svc?singleWsdl')
             ->call('getPassword', [
                 'UserId' => '4051301',
                 'Password' => 'Pa@1234',
